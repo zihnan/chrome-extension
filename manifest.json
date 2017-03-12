@@ -2,13 +2,13 @@
   "manifest_version": 2,
 
   "name": "Get the URL",
-  "description": "Get the URL from current page",
+  "description": "Get the URL from current google search page",
   "version": "1.0",
 
   "browser_action": {
     "default_icon": "water-drop.png",
     "default_popup": "popup.html",
-    "default_title": "Get the Fuxxing url from google search"
+    "default_title": "Get the URL from google search"
   },
   "permissions": [
     "activeTab",
