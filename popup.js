@@ -8,17 +8,9 @@ function showLinks() {
   }
   for (var i = 0; i < visibleLinks.length; ++i) {
     var row = document.createElement('tr');
-    var col0 = document.createElement('td');
-    var col1 = document.createElement('td');
-    var checkbox = document.createElement('input');
-    checkbox.checked = true;
-    checkbox.type = 'checkbox';
-    checkbox.id = 'check' + i;
-    col1.innerText = visibleLinks[i];
-    col1.style.whiteSpace = 'nowrap';
-    col1.onclick = function() {
-      checkbox.checked = !checkbox.checked;
-    }
+    var col = document.createElement('td');
+    col.innerText = visibleLinks[i];
+    col.style.whiteSpace = 'nowrap';
     row.appendChild(col1);
     linksTable.appendChild(row);
   }
