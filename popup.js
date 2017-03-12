@@ -14,13 +14,11 @@ function showLinks() {
     checkbox.checked = true;
     checkbox.type = 'checkbox';
     checkbox.id = 'check' + i;
-    //col0.appendChild(checkbox);
     col1.innerText = visibleLinks[i];
     col1.style.whiteSpace = 'nowrap';
     col1.onclick = function() {
       checkbox.checked = !checkbox.checked;
     }
-    //row.appendChild(col0);
     row.appendChild(col1);
     linksTable.appendChild(row);
   }
