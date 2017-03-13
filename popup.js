@@ -11,7 +11,7 @@ function showLinks() {
     var col = document.createElement('td');
     col.innerText = visibleLinks[i];
     col.style.whiteSpace = 'nowrap';
-    row.appendChild(col1);
+    row.appendChild(col);
     linksTable.appendChild(row);
   }
 }
