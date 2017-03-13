@@ -18,7 +18,8 @@ for (var i = 0; i < links.length;) {
       (links[i] == '') ||
       (kBadPrefix == links[i].toLowerCase().substr(0, kBadPrefix.length)) ||
       (links[i].includes('google')) ||
-      !(links[i].match('.*login.*') || links[i].match('.*sign.*')) ) {
+      (links[i].includes('https://www.youtube.com/?')) ||
+      (links[i].includes('https://www.blogger.com/?')) ) {
     links.splice(i, 1);
   } else {
     ++i;
